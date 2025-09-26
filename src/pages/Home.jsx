@@ -190,8 +190,7 @@ export default function Home() {
           {user ? (
             <>
               <div className="cta-box cta-register">
-                {console.log('User in Home:', user)}
-                <p className="cta-title">¡Bienvenido de nuevo, {user?.username || user?.name || user?.email || 'Usuario'}!</p>
+                <p className="cta-title">¡Bienvenido de nuevo, {user.nombre}!</p>
                 <p className="cta-subtitle">Gracias por ser parte de la comunidad Biblioteca Nexus.</p>
                 <div className="cta-form">
                   <Link to="/dashboard">
