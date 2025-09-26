@@ -1,0 +1,250 @@
+.libros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 0rem 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.title-border {
+  height: 7px;
+  width: 100%;
+  background-color: var(--color-dark-border);
+  margin-bottom: 4rem;
+}
+
+.sort-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.sort-container > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort-label {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.sort-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.sort-option {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sort-option:hover {
+  color: var(--color-primary-accent);
+}
+
+.sort-option.active {
+  color: var(--color-primary-accent);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  border: 1px solid var(--color-light-border);
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.search-input:focus {
+  border: 1px solid var(--color-dark-border);
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.5rem;
+  color: var(--color-secondary-text);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-image-grid {
+  width: 200px;
+  height: 316px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.book-title-grid {
+  font-size: 18px;
+  font-weight: normal;
+  transition: color 0.2s ease;
+}
+
+.book-card:hover .book-title-grid {
+  color: var(--color-primary-accent);
+  cursor: pointer;
+}
+
+.libros-container button {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  background-color: var(--color-dark-border);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 27px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+/* --- CTA Section Styles --- */
+.cta-section {
+  background-color: var(--color-tertiary-background);
+  padding: 4rem 2rem 11rem 2rem;
+  margin-top: 4rem;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.cta-box {
+  background-color: var(--color-background);
+  width: 560px;
+  height: 212px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-register .cta-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.cta-register .cta-subtitle {
+  font-size: 15px;
+  color: var(--color-secondary-text);
+  margin: 0 0 1.6rem 0;
+}
+
+.cta-form {
+  display: flex;
+}
+
+.cta-form input {
+  flex-grow: 1;
+  border: 1px solid var(--color-light-border);
+  padding: 0 1rem;
+  font-size: 16px;
+  outline: none;
+}
+
+.cta-form input:focus {
+  border: 1px solid var(--color-dark-border);
+}
+
+.cta-form button {
+  background-color: var(--color-primary-accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 27px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.cta-login {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-login-content {
+  margin-bottom: 1rem;
+}
+
+.cta-logo {
+  margin-bottom: 1rem;
+}
+
+.cta-login-text {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cta-login-button {
+  position: absolute;
+  bottom: -27.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-light-border);
+  color: var(--color-primary-text);
+  width: 336px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 8px var(--color-shadow-dark);
+}
+
+.svg-path-color {
+  fill: var(--color-primary-text);
+}
+
+[data-theme='dark'] .svg-path-color {
+  fill: white;
+}

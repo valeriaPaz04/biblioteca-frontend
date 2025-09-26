@@ -1,0 +1,277 @@
+.escritores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 0rem 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.title-border {
+  height: 7px;
+  width: 100%;
+  background-color: var(--color-dark-border);
+  margin-bottom: 4rem;
+}
+
+.author-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 42px;
+  font-weight: normal;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.author-name:hover {
+  color: var(--color-primary-accent);
+}
+
+.more-info-boton {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-primary-accent);
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.more-info-boton:hover {
+  color: var(--color-primary-text);
+}
+
+.author-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+}
+
+.author-image-container {
+  width: 454px;
+  height: 322px;
+}
+
+.author-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filter-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.filter-container p{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.alphabet-filter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.alphabet-letter {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0rem 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.alphabet-letter:hover {
+  color: var(--color-primary-accent);
+}
+
+.alphabet-letter.disabled {
+  color: var(--color-light-border);
+  cursor: not-allowed;
+  background-color: var(--color-secondary-background);
+}
+
+.author-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.author-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-image-grid {
+  width: 259px;
+  height: 185px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.author-name-grid {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.escritores-container button {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  background-color: var(--color-dark-border);
+  color: var(--color-background);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 27px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+/* --- CTA Section Styles --- */
+.cta-section {
+  background-color: var(--color-tertiary-background);
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1180px;
+  width: 100%;
+}
+
+.cta-box {
+  background-color: var(--color-background);
+  width: 560px;
+  height: 212px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-register .cta-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.cta-register .cta-subtitle {
+  font-size: 15px;
+  color: var(--color-secondary-text);
+  margin: 0 0 1.6rem 0;
+}
+
+.cta-form {
+  display: flex;
+}
+
+.cta-form input {
+  flex-grow: 1;
+  border: 1px solid var(--color-light-border);
+  padding: 0 1rem;
+  font-size: 16px;
+  outline: none;
+}
+
+.cta-form input:focus {
+  border: 1px solid var(--color-dark-border);
+}
+
+.cta-form button {
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-text);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 27px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.cta-login {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-login-content {
+  margin-bottom: 1rem;
+}
+
+.cta-logo {
+  margin-bottom: 1rem;
+}
+
+.cta-login-text {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cta-login-button {
+  position: absolute;
+  bottom: -27.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-light-border);
+  color: var(--color-primary-text);
+  width: 336px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 8px var(--color-shadow-dark);
+}
+
+.svg-path-color {
+  fill: var(--color-primary-text);
+}
+
+[data-theme='dark'] .svg-path-color {
+  fill: white;
+}
+
+.author-name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author-name-link:hover .author-name {
+  color: var(--color-primary-accent);
+}

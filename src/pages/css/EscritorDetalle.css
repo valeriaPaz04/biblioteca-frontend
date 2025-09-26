@@ -1,0 +1,64 @@
+.escritor-detalle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.escritor-detalle-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.escritor-info {
+  flex: 1;
+}
+
+.escritor-nombre {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--color-input-focus-label);
+}
+
+.escritor-nacionalidad, .escritor-fecha, .escritor-genero, .escritor-idioma {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.escritor-biografia {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.escritor-imagen {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.escritor-imagen img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  border: 1px solid var(--color-input-focus-label);
+  color: var(--color-input-focus-label);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.back-arrow {
+  font-size: 20px;
+}

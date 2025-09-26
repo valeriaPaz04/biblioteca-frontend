@@ -1,0 +1,94 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.5px;
+}
+
+:root {
+  /* Light Theme Colors */
+  --color-primary-text: #333333;
+  --color-secondary-text: #666666;
+  --color-tertiary-text: #888888;
+  --color-quaternary-text: #999999;
+  --color-placeholder-text: #adadad;
+
+  --color-background: #ffffff;
+  --color-secondary-background: #f9f9f9;
+  --color-tertiary-background: #eeeeee;
+  --color-quaternary-background: #f5f5f5;
+  --color-input-background: #f6f6f6;
+  --color-form-background: #FFFFF0;
+
+  --color-border: #e0e0e0;
+  --color-dark-border: black;
+  --color-light-border: #ccc;
+  --color-input-border: #e2e2e2;
+  --color-gray-border: gray;
+
+  --color-primary-accent: #f42535;
+  --color-secondary-accent: #fae80b;
+  --color-tertiary-accent: #ebcc5e;
+
+  --color-status-active-bg: #eafbee;
+  --color-status-active-text: #2bb673;
+  --color-status-returned-bg: #eaf3fb;
+  --color-status-returned-text: #2b7bb6;
+  --color-status-overdue-bg: #fdeaea;
+  --color-status-overdue-text: #d94f4f;
+
+  --color-shadow-light: rgba(0,0,0,0.04);
+  --color-shadow-medium: rgba(0,0,0,0.10);
+  --color-shadow-dark: rgba(0, 0, 0, 0.1);
+
+  --color-input-focus-label: #111111;
+  --color-input-autofill-bg: #ffffff;
+}
+
+body.dark {
+  /* Dark Theme Colors */
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #cccccc;
+  --color-tertiary-text: #aaaaaa;
+  --color-quaternary-text: #888888;
+  --color-placeholder-text: #777777;
+
+  --color-background: #1a1a1a;
+  --color-secondary-background: #222222;
+  --color-tertiary-background: #333333;
+  --color-quaternary-background: #444444;
+  --color-input-background: #555555;
+  --color-form-background: #2a2a2a;
+
+  --color-border: #555555;
+  --color-dark-border: #cccccc;
+  --color-light-border: #666666;
+  --color-input-border: #777777;
+  --color-gray-border: #888888;
+
+  --color-primary-accent: #ff6b7a;
+  --color-secondary-accent: #ffec80;
+  --color-tertiary-accent: #fcdb62;
+
+  --color-status-active-bg: #1a4d2e;
+  --color-status-active-text: #66cc99;
+  --color-status-returned-bg: #1a3a4d;
+  --color-status-returned-text: #6699cc;
+  --color-status-overdue-bg: #4d1a1a;
+  --color-status-overdue-text: #cc6666;
+
+  --color-shadow-light: rgba(255,255,255,0.04);
+  --color-shadow-medium: rgba(255,255,255,0.10);
+  --color-shadow-dark: rgba(255, 255, 255, 0.1);
+
+  --color-input-focus-label: #ffffff;
+  --color-input-autofill-bg: #333333;
+}
+
+body {
+  padding-top: 120px; /* Ajusta este valor a la altura de tu navbar */
+  background-color: var(--color-background);
+  color: var(--color-primary-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

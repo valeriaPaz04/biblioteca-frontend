@@ -1,0 +1,88 @@
+.libro-detalle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.libro-detalle-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.libro-info {
+  flex: 1;
+}
+
+.libro-titulo {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--color-input-focus-label);
+}
+
+.libro-autor, .libro-isbn, .libro-anio, .libro-genero, .libro-editorial {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.libro-descripcion {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.libro-imagen {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.libro-imagen img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.prestamo-button {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prestamo-button:hover {
+  background-color: #c82333;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  border: 1px solid var(--color-input-focus-label);
+  color: var(--color-input-focus-label);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 100px;
+}
+
+.back-arrow {
+  font-size: 20px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}

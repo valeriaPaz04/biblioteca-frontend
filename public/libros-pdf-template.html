@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Nexus - Catálogo de Libros</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #141414; color: #000000; font-family: 'Times New Roman', Times, serif; min-height: 100vh; padding: 2rem; }
+        .container { max-width: 64rem; margin: 0 auto; }
+        .header { margin-bottom: 2rem; text-align: center; background-color: #141414; padding-top: 50px; padding-bottom: 30px; }
+        .logo-container { display: flex; align-items: center; justify-content: center; gap: 3rem; }
+        .book-icon img { width: 250px; }
+        .library-title { font-size: 2.6rem; color: #ffffff; font-family: Georgia, serif; font-weight: normal; }
+        .main-content { background-color: #ffffff; padding: 2rem; border: 20px solid #000000; }
+        .directory-title { font-size: 2rem; font-weight: bold; color: #f42535; text-align: center; margin-bottom: 2rem; }
+        .book-card { border: 1.5px solid #f42535; background-color: #ffffff; padding: 1.5rem; margin-bottom: 1rem; }
+        .card-content { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .book-info { display: flex; gap: 1.5rem; align-items: center; }
+        .book-cover { width: 5rem; height: 7rem; border: 2px solid #d4d4d4; background-color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; color: #000000; flex-shrink: 0; }
+        .basic-info { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; width: 100%; }
+        .info-row { margin-bottom: 1rem; }
+        .label { font-weight: bold; color: #000000; display: block; }
+        .value { color: #000000; margin-top: 3px; }
+        .availability { text-align: right; margin-left: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="book-icon">
+                    <img src="/src/assets/logoBiblioteca.png" alt="Logo de la Biblioteca"/>
+                </div>
+                <h1 class="library-title">Biblioteca Nexus</h1>
+            </div>
+        </header>
+        <main class="main-content">
+            <h2 class="directory-title">Catálogo de Libros</h2>
+            <!-- Libros se insertarán aquí -->
+        </main>
+    </div>
+</body>
+</html>

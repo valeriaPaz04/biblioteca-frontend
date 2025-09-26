@@ -1,0 +1,99 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+  position: fixed; /* Agregar esto */
+  top: 0; /* Agregar esto */
+  left: 0; /* Agregar esto */
+  right: 0; /* Agregar esto */
+  z-index: 1000; /* Agregar esto */
+  transition: all 0.3s ease; /* Agregar transición */
+}
+
+/* Agregar esta clase para el estado scrolled */
+nav.scrolled {
+  padding: 0.5rem 2rem; /* Reducir padding */
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-logo img {
+  height: 75px;
+  transition: all 0.3s ease; /* Agregar transición */
+}
+
+/* Agregar esta regla para achica el logo */
+nav.scrolled .nav-logo img {
+  height: 50px;
+}
+
+.nav-logo h1 {
+  font-weight: 500;
+  margin: 0;
+  opacity: 1; /* Agregar esto */
+  transition: all 0.3s ease; /* Agregar transición */
+}
+
+/* Agregar esta regla para ocultar el título */
+nav.scrolled .nav-logo h1 {
+  opacity: 0;
+  transform: translateY(-10px);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links:first-child {
+  justify-content: flex-start;
+}
+
+.nav-links:last-child {
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f42535;
+}
+
+.theme-toggle-button {
+  color: var(--color-primary-text);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+.theme-toggle-button:hover {
+  background-color: transparent;
+}
+
+.theme-icon {
+  color: white;
+}
