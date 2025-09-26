@@ -52,7 +52,8 @@ export const AuthProvider = ({ children }) => {
 
     try {
       // Verificar si el email existe en el sistema
-      if (!emailExists(email)) {
+      const exists = await emailExists(email);
+      if (!exists) {
         setError('No existe una cuenta asociada a este correo electrónico');
         return;
       }

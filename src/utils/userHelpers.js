@@ -1,12 +1,13 @@
 /**
  * Verifica si un email existe en el sistema
  * @param {string} email - Email a verificar
- * @returns {boolean} - true si el email existe, false si no
+ * @returns {Promise<boolean>} - true si el email existe, false si no
  */
-export const emailExists = (email) => {
+export const emailExists = async (email) => {
   try {
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    return users.some(user => user.email.toLowerCase() === email.toLowerCase());
+    const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    const response = await fetch(`${API_BASE}/api/usuarios/email/${email}`);
+    return response.ok;
   } catch (error) {
     console.error('Error al verificar email:', error);
     return false;
@@ -16,12 +17,16 @@ export const emailExists = (email) => {
 /**
  * Obtiene un usuario por su email
  * @param {string} email - Email del usuario
- * @returns {object|null} - Usuario encontrado o null
+ * @returns {Promise<object|null>} - Usuario encontrado o null
  */
-export const getUserByEmail = (email) => {
+export const getUserByEmail = async (email) => {
   try {
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    return users.find(user => user.email.toLowerCase() === email.toLowerCase()) || null;
+    const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    const response = await fetch(`${API_BASE}/api/usuarios/email/${email}`);
+    if (response.ok) {
+      return await response.json();
+    }
+    return null;
   } catch (error) {
     console.error('Error al obtener usuario:', error);
     return null;
@@ -30,11 +35,16 @@ export const getUserByEmail = (email) => {
 
 /**
  * Obtiene todos los usuarios registrados
- * @returns {array} - Array de usuarios
+ * @returns {Promise<array>} - Array de usuarios
  */
-export const getAllUsers = () => {
+export const getAllUsers = async () => {
   try {
-    return JSON.parse(localStorage.getItem('users') || '[]');
+    const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+    const response = await fetch(`${API_BASE}/api/usuarios`);
+    if (response.ok) {
+      return await response.json();
+    }
+    return [];
   } catch (error) {
     console.error('Error al obtener usuarios:', error);
     return [];
