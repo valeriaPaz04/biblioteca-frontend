@@ -201,10 +201,6 @@ npm run lint     # Ejecuta ESLint
 - Implementar PWA (Progressive Web App)
 - Agregar internacionalización (i18n)
 
-## 📞 Soporte
-
-Si tienes preguntas sobre el código o necesitas ayuda para extender la funcionalidad, revisa los comentarios en el código fuente o consulta la documentación de las tecnologías utilizadas.
-
 ---
 
-**¡Felicitaciones!** Has completado el frontend de Biblioteca Nexus. Esta aplicación te servirá como base sólida para sistemas de gestión de bibliotecas más complejos.
+** Has llegado al final del documento **
